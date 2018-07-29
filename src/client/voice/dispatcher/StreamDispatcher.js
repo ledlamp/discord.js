@@ -209,10 +209,10 @@ class StreamDispatcher extends VolumeInterface {
 
       const data = this.streamingData;
 
-      if (data.missed >= 5) {
+      /*if (data.missed >= 5) {
         this.destroy('end', 'Stream is not generating quickly enough.');
         return;
-      }
+      }*/
 
       if (this.paused) {
         this.setSpeaking(false);
